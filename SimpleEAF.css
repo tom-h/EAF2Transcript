@@ -1,0 +1,26 @@
+annotations {
+    display: block;
+    clear: left;
+    border-top:dashed;
+    margin:10px;
+}
+
+annotations:before {
+    content:"(speaker: " attr(participant) ") (timespan: " attr(begin) "-" attr(end) ")" ;
+    font-size: 9pt;
+}
+
+annotations > block {
+    font-style:italic;
+}
+
+block {
+    display:block;
+    font-style:normal;
+    clear:left;
+}
+
+span{
+    float:left;
+    margin-right:2px;
+}
